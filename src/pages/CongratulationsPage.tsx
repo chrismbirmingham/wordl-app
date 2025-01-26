@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import MiniGuessGrid from '../components/MiniGuessGrid'
-import type { GuessFeedback } from '../types'
+import type { GuessFeedback, Score } from '../types'
 
 export default function CongratulationsPage() {
   const navigate = useNavigate()
