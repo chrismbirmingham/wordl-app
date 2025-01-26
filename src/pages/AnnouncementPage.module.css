@@ -1,0 +1,96 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  color: #2d3748;
+  font-family: "Playfair Display", serif;
+  margin: 1rem 0;
+}
+
+.photoFrame {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.detail {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.detail h3 {
+  color: #4a5568;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail p {
+  color: #2d3748;
+  font-size: 1.1rem;
+  margin: 0.25rem 0;
+}
+
+.announcement {
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #4a5568;
+  max-width: 800px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
